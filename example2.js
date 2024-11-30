@@ -1,5 +1,5 @@
 
-console.log(multiplyTwoNumbers(13,2));
+console.log(multiplyTwoNumbers(88,2));
 console.log(multiplyTwoNumbers(5,12));
 console.log(multiplyTwoNumbers(23,2));
 console.log(multiplyTwoNumbers(11,67));
