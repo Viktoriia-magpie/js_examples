@@ -37,7 +37,7 @@ const employee1 = {
 
 const employee2 = {
     name: "Ben",
-    last_name: "White",
+    last_name: "Brown",
     age: 30,
     companies: ["Wallmart", "RBC", "Amazon", "Google"]
 }
