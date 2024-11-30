@@ -1,0 +1,45 @@
+function compareEmployees(employee1_object, employee2_object) {
+    if (employee1_object.companies.length > employee2_object.companies.length) {
+        console.log(employee1_object.name + " has worked at more companies");
+        for (let x in employee1_object.companies) {
+            console.log(employee1_object.companies[x])
+        }
+    }
+
+    if (employee1_object.companies.length < employee2_object.companies.length) {
+        console.log(employee2_object.name + " has worked at more companies");
+        for (let x in employee2_object.companies) {
+            console.log(employee2_object.companies[x])
+        }
+    }
+
+
+    if (employee1_object.companies.length == employee2_object.companies.length) {
+        console.log(employee1_object.name + " and " + employee2_object.name + " have worked at the same number of companies");
+        console.log(employee1_object.name + "'s companies:");
+        for (let x in employee1_object.companies) {
+            console.log(employee1_object.companies[x])
+        }
+        console.log(employee2_object.name + "'s companies:");
+        for (let x in employee2_object.companies) {
+            console.log(employee2_object.companies[x])
+        }
+    }
+}
+
+
+const employee1 = {
+    name: "Max",
+    last_name: "Grey",
+    age: 35,
+    companies: ["BlackBerry", "Shell", "Amazon", "TD"]
+}
+
+const employee2 = {
+    name: "Ben",
+    last_name: "White",
+    age: 30,
+    companies: ["Wallmart", "RBC", "Amazon", "Google"]
+}
+
+console.log (compareEmployees(employee1, employee2));
